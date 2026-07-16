@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BR Toilet Hire - Portable Toilet &amp; Luxury Trailer Hire, South Wales</title>
+<meta name="description" content="Standard portable toilets, luxury trailers, crowd control and event support across Newport, South Wales and the UK. Family-run, founded 2023, 80% client return rate.">
+<link rel="icon" href="img/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BR Toilet Hire - Portable Toilet &amp; Luxury Trailer Hire">
+<meta property="og:description" content="Standard portable toilets, luxury trailers, crowd control and event support across South Wales and the UK.">
+<meta property="og:image" content="https://andrei170.github.io/br-toilet-hire-demo/img/banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://andrei170.github.io/br-toilet-hire-demo/img/banner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BR Toilet Hire",
+  "image": "https://andrei170.github.io/br-toilet-hire-demo/img/logo.png",
+  "telephone": "+441269847022",
+  "email": "hire@brtoilethire.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Alabany Street, Crindau",
+    "addressLocality": "Newport",
+    "addressRegion": "Wales",
+    "addressCountry": "GB"
+  },
+  "areaServed": ["Newport", "South Wales", "Wales", "United Kingdom"],
+  "sameAs": ["https://www.facebook.com/p/BR-Toilet-Hire-61574955491704/"],
+  "foundingDate": "2023"
+}
+</script>
+<style>
+  :root{
+    --bg:#0c1015; --bg2:#131922; --panel:rgba(255,255,255,.045); --panel-brd:rgba(255,255,255,.1);
+    --ink:#f0f2f5; --mut:#9ba5b0; --mut2:#727d88;
+    --blue:#4a72c4; --blue2:#6f92dd; --steel:#8b96a3;
+    --glass:rgba(255,255,255,.06); --glass-brd:rgba(255,255,255,.12);
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.disp{font-family:'Fraunces',serif;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  :focus-visible{outline:2px solid var(--blue2);outline-offset:3px}
+  .eyebrow{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue2);font-weight:700}
+
+  .demoribbon{background:linear-gradient(90deg,#141922,#1a2130);border-bottom:1px solid var(--panel-brd);
+    text-align:center;font-size:12.5px;color:var(--mut);padding:8px 14px}
+  .demoribbon b{color:var(--blue2)}
+
+  nav{position:sticky;top:0;z-index:50;padding:16px 0;transition:.35s;background:transparent}
+  nav.shrink{background:rgba(12,16,21,.85);backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid var(--panel-brd);padding:10px 0}
+  .navrow{display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .brand{display:flex;align-items:center;gap:10px}
+  .brand .logobadge{background:#fff;border-radius:9px;padding:5px 10px;display:inline-flex;align-items:center;
+    box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  .brand img{height:32px;width:auto;display:block}
+  footer .brand .logobadge{padding:7px 14px}
+  footer .brand img{height:36px}
+  .navlinks{display:flex;gap:28px;font-size:14.5px;font-weight:600;color:var(--mut)}
+  .navlinks a:hover{color:var(--ink)}
+  @media(max-width:860px){.navlinks{display:none}}
+  .navcta{background:var(--blue);color:#fff;padding:10px 20px;border-radius:99px;font-weight:700;font-size:14px;
+    position:relative;overflow:hidden;white-space:nowrap}
+  .navcta::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);
+    transform:translateX(-120%);transition:transform .6s}
+  .navcta:hover::after{transform:translateX(120%)}
+
+  .hero{position:relative;padding:64px 0 80px;overflow:hidden}
+  .heroPhoto{position:absolute;inset:0;background-image:url('img/banner.jpg');background-size:cover;background-position:center;opacity:.24}
+  .heroGrad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,16,21,.55),rgba(12,16,21,.94) 62%,var(--bg))}
+  .heroGlow{position:absolute;top:-10%;right:-8%;width:55%;height:65%;
+    background:radial-gradient(circle,rgba(74,114,196,.24),transparent 65%);filter:blur(10px);pointer-events:none}
+  svg.grain{position:absolute;inset:0;width:100%;height:100%;opacity:.05;pointer-events:none}
+  .herobody{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  @media(max-width:940px){.herobody{grid-template-columns:1fr}}
+  .badgerow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+  .pillbadge{display:inline-flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--panel-brd);
+    padding:7px 13px;border-radius:99px;font-size:12.5px;font-weight:600;color:var(--mut)}
+  .pillbadge iconify-icon{color:var(--blue2);font-size:15px}
+  h1.hh{font-size:clamp(34px,5.4vw,56px);font-weight:600;line-height:1.05;margin-bottom:20px}
+  h1.hh .grad{background:linear-gradient(120deg,var(--blue2),#a9c0ee 40%,var(--blue2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .herosub{font-size:17px;color:var(--mut);max-width:520px;margin-bottom:30px}
+  .herobtns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;padding:14px 26px;border-radius:99px;
+    position:relative;overflow:hidden;transition:transform .25s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);
+    transform:translateX(-120%);transition:transform .6s}
+  .btn:hover::after{transform:translateX(120%)}
+  .btn-primary{background:var(--blue);color:#fff}
+  .btn-ghost{border:1px solid var(--panel-brd);color:var(--ink);background:var(--panel)}
+  .statsrow{display:flex;gap:34px;flex-wrap:wrap}
+  .statitem b{display:block;font-family:'Fraunces',serif;font-size:26px;font-weight:600}
+  .statitem span{font-size:12.5px;color:var(--mut2);text-transform:uppercase;letter-spacing:.08em}
+
+  .heroCard{background:var(--glass);border:1px solid var(--glass-brd);border-radius:22px;padding:26px;
+    backdrop-filter:blur(16px);box-shadow:0 30px 70px rgba(0,0,0,.4)}
+  .heroCard h3{font-size:19px;font-weight:600;margin-bottom:4px}
+  .heroCard p.small{color:var(--mut);font-size:13.5px;margin-bottom:18px}
+  .field{margin-bottom:12px}
+  .field label{display:block;font-size:12px;color:var(--mut2);margin-bottom:5px;text-transform:uppercase;letter-spacing:.06em}
+  .field input,.field select,.field textarea{width:100%;padding:11px 13px;border-radius:10px;border:1px solid var(--panel-brd);
+    background:rgba(255,255,255,.03);color:var(--ink);font-family:inherit;font-size:14.5px}
+  .field textarea{resize:vertical;min-height:64px}
+  .field input::placeholder{color:var(--mut2)}
+  .heroCard .btn{width:100%;justify-content:center;margin-top:6px}
+  .heroCard .fine{font-size:11.5px;color:var(--mut2);text-align:center;margin-top:10px}
+
+  .marquee{border-top:1px solid var(--panel-brd);border-bottom:1px solid var(--panel-brd);background:var(--bg2);
+    padding:16px 0;overflow:hidden;white-space:nowrap}
+  .mtrack{display:inline-flex;gap:44px;animation:scroll 30s linear infinite}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .mtrack span{font-size:13.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mut2);display:inline-flex;align-items:center;gap:10px}
+  .mtrack span iconify-icon{color:var(--blue2);font-size:15px}
+
+  section{padding:88px 0}
+  .sechead{max-width:640px;margin-bottom:48px}
+  .sechead h2{font-size:clamp(26px,3.6vw,38px);font-weight:600;margin:10px 0 12px}
+  .sechead p{color:var(--mut);font-size:16px}
+  [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  [data-reveal].in{opacity:1;transform:translateY(0)}
+
+  .bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:16px}
+  @media(max-width:940px){.bento{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.bento{grid-template-columns:1fr}}
+  .bcard{background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--radius);padding:22px;
+    display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:.3s}
+  .bcard:hover{border-color:rgba(74,114,196,.4);transform:translateY(-3px)}
+  .bcard.big{grid-column:span 2;grid-row:span 2}
+  .bcard iconify-icon{font-size:26px;color:var(--blue2)}
+  .bcard h4{font-size:16.5px;font-weight:700;margin-top:12px}
+  .bcard p{font-size:13.5px;color:var(--mut);margin-top:6px}
+  .bcard.big h4{font-size:21px}
+  .bcard.big p{font-size:14.5px;max-width:80%}
+  .bcard.photo{background-size:cover;background-position:center}
+  .bcard.photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,16,21,.15),rgba(12,16,21,.92))}
+  .bcard.photo>*{position:relative;z-index:1}
+
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  @media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  .gitem{border-radius:14px;overflow:hidden;aspect-ratio:1/1;cursor:pointer;position:relative;border:1px solid var(--panel-brd)}
+  .gitem img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .gitem:hover img{transform:scale(1.08)}
+  .lightbox{position:fixed;inset:0;background:rgba(4,5,7,.92);display:none;align-items:center;justify-content:center;z-index:200;padding:30px}
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:90vw;max-height:85vh;border-radius:12px}
+  .lightbox .close{position:absolute;top:24px;right:28px;font-size:30px;color:#fff;cursor:pointer;line-height:1}
+
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.steps{grid-template-columns:1fr}}
+  .step{background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--radius);padding:22px}
+  .stepnum{font-family:'Fraunces',serif;font-size:30px;color:var(--blue2);font-weight:600}
+  .step h4{margin:10px 0 6px;font-size:16px;font-weight:700}
+  .step p{font-size:13.5px;color:var(--mut)}
+
+  .revwrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center}
+  @media(max-width:860px){.revwrap{grid-template-columns:1fr}}
+  .revstat{background:linear-gradient(160deg,rgba(74,114,196,.16),var(--panel));border:1px solid var(--panel-brd);
+    border-radius:var(--radius);padding:34px;text-align:center}
+  .revstat .big{font-family:'Fraunces',serif;font-size:52px;font-weight:600}
+  .revstat p{color:var(--mut);font-size:14px;margin-top:6px}
+  .revcard{background:var(--panel);border:1px solid var(--panel-brd);border-radius:var(--radius);padding:26px}
+  .revcard h4{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:10px}
+  .revcard p{color:var(--mut);font-size:14.5px;line-height:1.6}
+
+  .band{background:var(--bg2);border-top:1px solid var(--panel-brd);border-bottom:1px solid var(--panel-brd)}
+  .bandgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:52px 24px;max-width:1180px;margin:0 auto}
+  @media(max-width:760px){.bandgrid{grid-template-columns:1fr}}
+  .banditem{display:flex;gap:14px;align-items:flex-start}
+  .banditem iconify-icon{font-size:26px;color:var(--blue2);flex-shrink:0;margin-top:2px}
+  .banditem h4{font-size:15.5px;font-weight:700;margin-bottom:4px}
+  .banditem p{font-size:13.5px;color:var(--mut)}
+
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--panel);border:1px solid var(--panel-brd);padding:9px 16px;border-radius:99px;font-size:14px;font-weight:600;
+    display:inline-flex;align-items:center;gap:7px}
+  .chip iconify-icon{color:var(--blue2);font-size:15px}
+  .arwrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;align-items:start;margin-top:8px}
+  @media(max-width:860px){.arwrap{grid-template-columns:1fr}}
+  .mapwrap{border-radius:var(--radius);overflow:hidden;border:1px solid var(--panel-brd);aspect-ratio:4/3}
+  .mapwrap iframe{width:100%;height:100%;border:0;filter:grayscale(.25) invert(.92) contrast(.9)}
+
+  .faq{max-width:760px}
+  .qitem{border-bottom:1px solid var(--panel-brd)}
+  .qhead{display:flex;justify-content:space-between;align-items:center;padding:20px 4px;cursor:pointer;font-weight:700;font-size:15.5px}
+  .qhead iconify-icon{transition:transform .3s;color:var(--blue2);flex-shrink:0}
+  .qitem.open .qhead iconify-icon{transform:rotate(45deg)}
+  .qbody{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .qbody p{color:var(--mut);font-size:14.5px;padding:0 4px 20px;line-height:1.65}
+
+  .finalcta{text-align:center;background:linear-gradient(160deg,rgba(74,114,196,.18),var(--bg2));
+    border:1px solid var(--panel-brd);border-radius:24px;padding:64px 30px;position:relative;overflow:hidden}
+  .finalcta h2{font-size:clamp(26px,4vw,38px);margin-bottom:14px}
+  .finalcta p{color:var(--mut);max-width:520px;margin:0 auto 26px;font-size:16px}
+
+  footer{padding:50px 0 90px;border-top:1px solid var(--panel-brd);font-size:13.5px;color:var(--mut2)}
+  .footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:30px}
+  @media(max-width:760px){.footgrid{grid-template-columns:1fr}}
+  .footgrid h5{color:var(--ink);font-size:14px;margin-bottom:12px}
+  .footgrid a{display:block;color:var(--mut2);margin-bottom:8px}
+  .footgrid a:hover{color:var(--ink)}
+  .socialrow{display:flex;gap:12px;margin-top:10px}
+  .socialrow a{width:36px;height:36px;border:1px solid var(--panel-brd);border-radius:99px;display:flex;align-items:center;justify-content:center}
+  .socialrow a:hover{border-color:var(--blue)}
+  .footbottom{border-top:1px solid var(--panel-brd);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  .mobilecta{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;gap:10px;padding:12px 14px;
+    background:rgba(12,16,21,.94);backdrop-filter:blur(14px);border-top:1px solid var(--panel-brd)}
+  @media(max-width:760px){.mobilecta{display:flex}}
+  .mobilecta a{flex:1;text-align:center;padding:13px;border-radius:99px;font-weight:700;font-size:14px}
+  .mobilecta .call{background:var(--panel);border:1px solid var(--panel-brd);color:var(--ink)}
+  .mobilecta .quote{background:var(--blue);color:#fff}
+</style>
+</head>
+<body>
+
+<div class="demoribbon">Concept demo built to show what's possible for <b>BR Toilet Hire</b> &middot; not the live site</div>
+
+<div class="heroGlow" aria-hidden="true"></div>
+
+<nav id="nav">
+  <div class="wrap navrow">
+    <a class="brand" href="#top"><span class="logobadge"><img src="img/logo.png" alt="BR Toilet Hire logo"></span></a>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#areas">Areas</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="navcta" href="tel:01269847022">Call 01269 847022</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="heroPhoto"></div>
+  <div class="heroGrad"></div>
+  <svg class="grain" aria-hidden="true">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <rect width="100%" height="100%" filter="url(#grain)"/>
+  </svg>
+  <div class="wrap herobody">
+    <div>
+      <div class="badgerow">
+        <span class="pillbadge"><iconify-icon icon="mdi:repeat"></iconify-icon>80% client return rate</span>
+        <span class="pillbadge"><iconify-icon icon="mdi:account-group"></iconify-icon>Family-run since 2023</span>
+        <span class="pillbadge"><iconify-icon icon="mdi:map-marker"></iconify-icon>Newport &amp; South Wales</span>
+      </div>
+      <h1 class="hh">Portable toilets and luxury trailers, <span class="grad">delivered right, every time.</span></h1>
+      <p class="herosub">Standard portable toilets, accessible units, luxury trailers, crowd control and full event support across South Wales and the UK. 24/7 support, family-run.</p>
+      <div class="herobtns">
+        <a class="btn btn-primary" href="#quote"><iconify-icon icon="mdi:calculator-variant-outline"></iconify-icon>Get a free quote</a>
+        <a class="btn btn-ghost" href="tel:01269847022"><iconify-icon icon="mdi:phone"></iconify-icon>01269 847022</a>
+      </div>
+      <div class="statsrow">
+        <div class="statitem"><b>80%</b><span>clients return</span></div>
+        <div class="statitem"><b>4 businesses</b><span>10+ staff each</span></div>
+        <div class="statitem"><b>24/7</b><span>support</span></div>
+      </div>
+    </div>
+
+    <div class="heroCard" id="quote" data-reveal>
+      <h3>Get a free quote</h3>
+      <p class="small">No obligation. Events, construction sites, or long-term hire.</p>
+      <form onsubmit="event.preventDefault();this.querySelector('.btn').textContent='Thanks - we\'ll be in touch shortly';">
+        <div class="field"><label for="qname">Name</label><input id="qname" type="text" placeholder="Your name" required></div>
+        <div class="field"><label for="qphone">Phone</label><input id="qphone" type="tel" placeholder="07xxx xxxxxx" required></div>
+        <div class="field"><label for="qissue">What do you need?</label><textarea id="qissue" placeholder="e.g. event hire, construction site, luxury trailer..."></textarea></div>
+        <button class="btn btn-primary" type="submit"><iconify-icon icon="mdi:send-variant-outline"></iconify-icon>Send my details</button>
+      </form>
+      <p class="fine">Demo form &middot; not yet connected to a live inbox</p>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="mtrack">
+    <span><iconify-icon icon="mdi:star-outline"></iconify-icon>Trusted by Race Nation events</span>
+    <span><iconify-icon icon="mdi:star-outline"></iconify-icon>Castle Runs</span>
+    <span><iconify-icon icon="mdi:star-outline"></iconify-icon>Runthrough</span>
+    <span><iconify-icon icon="mdi:map-marker-outline"></iconify-icon>Newport</span>
+    <span><iconify-icon icon="mdi:map-marker-outline"></iconify-icon>South Wales</span>
+    <span><iconify-icon icon="mdi:map-marker-outline"></iconify-icon>UK-wide</span>
+    <span><iconify-icon icon="mdi:star-outline"></iconify-icon>Trusted by Race Nation events</span>
+    <span><iconify-icon icon="mdi:star-outline"></iconify-icon>Castle Runs</span>
+    <span><iconify-icon icon="mdi:star-outline"></iconify-icon>Runthrough</span>
+    <span><iconify-icon icon="mdi:map-marker-outline"></iconify-icon>Newport</span>
+    <span><iconify-icon icon="mdi:map-marker-outline"></iconify-icon>South Wales</span>
+    <span><iconify-icon icon="mdi:map-marker-outline"></iconify-icon>UK-wide</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <div class="eyebrow">What we offer</div>
+      <h2>Every kind of hire, one reliable team.</h2>
+      <p>From a single site toilet to full event infrastructure.</p>
+    </div>
+    <div class="bento">
+      <div class="bcard big photo" style="background-image:url('img/luxury-trailer.jpg')" data-reveal>
+        <iconify-icon icon="mdi:home-city-outline"></iconify-icon>
+        <div><h4>Luxury Toilet Trailers</h4><p>AC, running water, and finishes that don't look like a building site.</p></div>
+      </div>
+      <div class="bcard" data-reveal><iconify-icon icon="mdi:human-male-female"></iconify-icon><h4>Standard Portable Toilets</h4><p>Reliable units for construction sites and everyday hire.</p></div>
+      <div class="bcard" data-reveal><iconify-icon icon="mdi:wheelchair-accessibility"></iconify-icon><h4>Accessible Toilets</h4><p>Regulation-compliant units for full site accessibility.</p></div>
+      <div class="bcard" data-reveal><iconify-icon icon="mdi:fence"></iconify-icon><h4>Crowd Control &amp; Fencing</h4><p>Heras panels and water-filled barriers for events.</p></div>
+      <div class="bcard" data-reveal><iconify-icon icon="mdi:tanker-truck"></iconify-icon><h4>Septic Tank Emptying</h4><p>Licensed waste disposal, delivery and collection included.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <div class="eyebrow">Recent work</div>
+      <h2>Real units, real events.</h2>
+      <p>A sample of hire units and event setups across South Wales.</p>
+    </div>
+    <div class="gallery">
+      <div class="gitem" data-reveal onclick="openLightbox(this)"><img loading="lazy" src="img/luxury-trailer.jpg" alt="BR Toilet Hire luxury toilet trailer"></div>
+      <div class="gitem" data-reveal onclick="openLightbox(this)"><img loading="lazy" src="img/proj-2.jpg" alt="BR Toilet Hire portable toilet unit"></div>
+      <div class="gitem" data-reveal onclick="openLightbox(this)"><img loading="lazy" src="img/proj-3.jpg" alt="BR Toilet Hire event setup"></div>
+      <div class="gitem" data-reveal onclick="openLightbox(this)"><img loading="lazy" src="img/proj-4.jpg" alt="BR Toilet Hire portable toilet unit"></div>
+      <div class="gitem" data-reveal onclick="openLightbox(this)"><img loading="lazy" src="img/proj-5.jpg" alt="BR Toilet Hire event setup"></div>
+      <div class="gitem" data-reveal onclick="openLightbox(this)"><img loading="lazy" src="img/proj-6.jpg" alt="BR Toilet Hire portable toilet unit"></div>
+      <div class="gitem" data-reveal onclick="openLightbox(this)"><img loading="lazy" src="img/proj-7.jpg" alt="BR Toilet Hire event setup"></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightboxImg" src="" alt="Enlarged project photo">
+</div>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <div class="eyebrow">How it works</div>
+      <h2>Straightforward, start to finish.</h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal><div class="stepnum">01</div><h4>Free quote</h4><p>Tell us what you need, event, site, or long-term hire, and we'll put together a real quote.</p></div>
+      <div class="step" data-reveal><div class="stepnum">02</div><h4>Family-run</h4><p>Founded by Ian and Jo in 2023, with Michael running operations day to day.</p></div>
+      <div class="step" data-reveal><div class="stepnum">03</div><h4>Delivered and set up</h4><p>Delivery, collection, and setup handled by our own team.</p></div>
+      <div class="step" data-reveal><div class="stepnum">04</div><h4>Maintained throughout</h4><p>Weekly cleaning and restocking for the length of your hire.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="bandgrid">
+    <div class="banditem" data-reveal><iconify-icon icon="mdi:repeat"></iconify-icon><div><h4>80% Client Return Rate</h4><p>Most clients come back, the clearest sign the service holds up.</p></div></div>
+    <div class="banditem" data-reveal><iconify-icon icon="mdi:account-group-outline"></iconify-icon><div><h4>Family-Run</h4><p>Founded by Ian and Jo in 2023, based in Newport.</p></div></div>
+    <div class="banditem" data-reveal><iconify-icon icon="mdi:clock-outline"></iconify-icon><div><h4>24/7 Support</h4><p>Real support when an event or site needs it, not just office hours.</p></div></div>
+  </div>
+</div>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <div class="eyebrow">Reputation</div>
+      <h2>Trusted by real events.</h2>
+    </div>
+    <div class="revwrap">
+      <div class="revstat" data-reveal>
+        <div class="big">80%</div>
+        <p>of clients return for their next hire</p>
+      </div>
+      <div class="revcard" data-reveal>
+        <h4>Event partners on record</h4>
+        <p>BR Toilet Hire has supplied facilities for Race Nation events, Castle Runs, and Runthrough, real event organisers, not just individual bookings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="areas" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <div class="eyebrow">Where we work</div>
+      <h2>South Wales and beyond.</h2>
+      <p>Based in Newport, covering Wales and the wider UK.</p>
+    </div>
+    <div class="arwrap">
+      <div class="chips" data-reveal>
+        <span class="chip"><iconify-icon icon="mdi:map-marker"></iconify-icon>Newport</span>
+        <span class="chip"><iconify-icon icon="mdi:map-marker"></iconify-icon>South Wales</span>
+        <span class="chip"><iconify-icon icon="mdi:map-marker"></iconify-icon>Wales</span>
+        <span class="chip"><iconify-icon icon="mdi:map-marker"></iconify-icon>UK-wide</span>
+        <div style="margin-top:20px;font-size:13.5px;color:var(--mut);display:flex;align-items:center;gap:8px">
+          <iconify-icon icon="mdi:map-marker-radius-outline" style="color:var(--blue2);font-size:17px"></iconify-icon>
+          Alabany Street, Crindau, Newport, South Wales
+        </div>
+      </div>
+      <div class="mapwrap" data-reveal>
+        <iframe src="https://maps.google.com/maps?q=Alabany+Street,+Crindau,+Newport,+Wales&z=10&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="BR Toilet Hire service area map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <div class="eyebrow">Questions</div>
+      <h2>Good to know.</h2>
+    </div>
+    <div class="faq">
+      <div class="qitem" data-reveal>
+        <div class="qhead" onclick="toggleFaq(this)">Do you cover events as well as construction sites?<iconify-icon icon="mdi:plus"></iconify-icon></div>
+        <div class="qbody"><p>Yes, both. We've supplied facilities for organised events like Race Nation, Castle Runs and Runthrough, as well as ongoing construction site hire.</p></div>
+      </div>
+      <div class="qitem" data-reveal>
+        <div class="qhead" onclick="toggleFaq(this)">What's the difference between standard and luxury units?<iconify-icon icon="mdi:plus"></iconify-icon></div>
+        <div class="qbody"><p>Standard portable toilets are built for reliability on site. Luxury trailers add AC, running water and finishes suited to weddings and premium events.</p></div>
+      </div>
+      <div class="qitem" data-reveal>
+        <div class="qhead" onclick="toggleFaq(this)">Do you offer accessible units?<iconify-icon icon="mdi:plus"></iconify-icon></div>
+        <div class="qbody"><p>Yes, regulation-compliant accessible toilets are available alongside our standard range.</p></div>
+      </div>
+      <div class="qitem" data-reveal>
+        <div class="qhead" onclick="toggleFaq(this)">What areas do you cover?<iconify-icon icon="mdi:plus"></iconify-icon></div>
+        <div class="qbody"><p>Newport and South Wales as our base, with delivery available throughout Wales and the wider UK.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="finalcta" data-reveal>
+      <h2>Need toilets or facilities sorted?</h2>
+      <p>Free, no-obligation quote from a family-run team. No pressure, no hard sell.</p>
+      <div class="herobtns" style="justify-content:center">
+        <a class="btn btn-primary" href="tel:01269847022"><iconify-icon icon="mdi:phone"></iconify-icon>Call 01269 847022</a>
+        <a class="btn btn-ghost" href="#quote"><iconify-icon icon="mdi:calculator-variant-outline"></iconify-icon>Request a quote online</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <a class="brand" href="#top"><span class="logobadge"><img src="img/logo.png" alt="BR Toilet Hire logo" style="height:30px"></span></a>
+        <p style="margin-top:14px;max-width:320px">Family-run portable toilet and luxury trailer hire across South Wales and the UK.</p>
+        <div class="socialrow">
+          <a href="https://www.facebook.com/p/BR-Toilet-Hire-61574955491704/" aria-label="Facebook"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+        </div>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="#services">Luxury Trailers</a>
+        <a href="#services">Standard Toilets</a>
+        <a href="#services">Crowd Control</a>
+        <a href="#services">Septic Emptying</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="tel:01269847022">01269 847022</a>
+        <a href="mailto:hire@brtoilethire.com">hire@brtoilethire.com</a>
+        <a href="#">Alabany Street, Crindau, Newport</a>
+      </div>
+    </div>
+    <div class="footbottom">
+      <span>&copy; BR Toilet Hire &middot; Newport, South Wales</span>
+      <span>Concept demo prepared by AG Consulting</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobilecta">
+  <a class="call" href="tel:01269847022"><iconify-icon icon="mdi:phone"></iconify-icon> Call</a>
+  <a class="quote" href="#quote"><iconify-icon icon="mdi:calculator-variant-outline"></iconify-icon> Free Quote</a>
+</div>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('shrink', window.scrollY > 40);
+  }, {passive:true});
+
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  revealEls.forEach((el,i)=> el.style.transitionDelay = (i%6)*70 + 'ms');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:.12});
+  revealEls.forEach(el=>io.observe(el));
+
+  function toggleFaq(head){
+    const item = head.parentElement;
+    const body = item.querySelector('.qbody');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.qitem.open').forEach(o=>{ o.classList.remove('open'); o.querySelector('.qbody').style.maxHeight = null; });
+    if(!wasOpen){ item.classList.add('open'); body.style.maxHeight = body.scrollHeight + 'px'; }
+  }
+
+  function openLightbox(el){
+    const src = el.querySelector('img').src;
+    document.getElementById('lightboxImg').src = src;
+    document.getElementById('lightbox').classList.add('open');
+  }
+  function closeLightbox(){ document.getElementById('lightbox').classList.remove('open'); }
+</script>
+</body>
+</html>
